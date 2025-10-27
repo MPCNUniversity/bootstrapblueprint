@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Friedel Majoor">
+    <title>MPCN - bootstrap</title>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./css/customclass.css" rel="stylesheet"></script>
+</head>
+<body>
+    <section>   <!-- bootstrap utility classes en tekstbewerking -->
+        <div class="jumbotron text-center"> <!-- jumbotron component voor hero-style content - trekt extra aandacht -->
+            <h1>Bootstrap 3 Voorbeeld</h1>
+            <p>Een eenvoudige opzet met Bootstrap 3</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="background-color: lightblue;">Kolom 1</div>
+                <div class="col-md-4" style="background-color: lightgreen;">Kolom 2</div>
+                <div class="col-md-4" style="background-color: lightcoral;">Kolom 3</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="background-color: lightyellow;">Kolom 1</div>
+                <div class="col-md-6" style="background-color: lightgray;">Kolom 2</div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="row">
+            <div class="=col-sm-12">
+                <div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"> <!-- zichtbaar op alle screensizes -->
+                            <div class="customDiv">All screens</div>
+                        </div>                                          <!-- d-none neemt zichtbaarheid weg | d-md-block zet zichtbaarheid vanaf die grootte -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hiding-xs d-none d-sm-block"> <!-- d-none neemt zichtbaarheid weg d-sm-block : vanaf small screensize is dit zichtbaar -->
+                            <div class="customDiv">Small, Medium and Large</div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-none d-md-block"> <!-- d-none neemt zichtbaarheid weg d-md-block : vanaf medium screensize is dit zichtbaar -->
+                            <div class="customDiv">Medium and Large</div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-none d-lg-block"> <!-- d-none neemt zichtbaarheid weg d-lg-block : vanaf large screensize is dit zichtbaar -->
+                            <div class="customDiv">Large</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="row">
+            <div class="=col-sm-12">
+                <div>                                 <!-- display screen /  display printer -->
+
+                    <div class="row">
+                        <div class="col-xs-12 d-print-none"> <!-- zichtbaar in de browser maar niet als het afgedrukt wordt -->
+                            <div class="customDiv">Visible on browser when not printing</div>
+                        </div>
+
+                        <div class="col-xs-12 d-none d-print-block"> <!-- zichtbaar als het afgedrukt wordt maar niet in de browser -->
+                            <div class="customDiv">Visible when printing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">     <!-- h4 element is een block element - met linebreaks voor en achter -->
+                <p>
+                    <h4>Bootstrap</h4> is a free, open-source and is the most popular HTML/CSS, and JavaScript framework developed by twitter for creating responsive web applications. It includes HTML and CSS based design templates for common user interface components like Buttons, Dropdowns, Typography, Tabs, Forms, Tables, Navigations, Alerts, Modals, Accordion, Carousel etc. Along with optional JavaScript extensions.  Bootstrap framework is based on open standards - HTML, CSS and JavaScript. This means bootstrap can be used with any server side technology and any platform. You can use it with any web application built with any server side technology like ASP.NET, JAVA, PHP etc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">     <!-- door gebruik te maken van <span class="h4"> </span> kunnen we h4 stijl toepassen op inline element -->
+                <p>
+                    <span class="h4">Bootstrap</span> is a free, open-source and is the most popular HTML/CSS, and JavaScript framework developed by twitter for creating responsive web applications. It includes HTML and CSS based design templates for common user interface components like Buttons, Dropdowns, Typography, Tabs, Forms, Tables, Navigations, Alerts, Modals, Accordion, Carousel etc. Along with optional JavaScript extensions.  Bootstrap framework is based on open standards - HTML, CSS and JavaScript. This means bootstrap can be used with any server side technology and any platform. You can use it with any web application built with any server side technology like ASP.NET, JAVA, PHP etc.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">     <!-- door gebruik te maken van <span class="h4"> </span> kunnen we h4 stijl toepassen op inline element -->
+                <p>
+                    <h1>h1</h1> <h2>h2</h2> <h3>h3</h3> <h4>h4</h4> <h5>h5</h5> <h6>h6</h6>
+
+                    <span class="h1">h1</span> <span class="h2">h2</span> <span class="h3">h3</span> <span class="h4">h4</span> <span class="h5">h5</span> <span class="h6">h6</span>
+                                                                        <!-- kleinere heading binnen een heading -->
+                    <h1>Main heading<small> small heading</small></h1>
+                    <h2>Main heading<small> small heading</small></h2>
+                    <h3>Main heading<small> small heading</small></h3>
+                    <h4>Main heading<small> small heading</small></h4>
+                    <h5>Main heading<small> small heading</small></h5>
+                    <h6>Main heading<small> small heading</small></h6>
+                                                                        <!-- kleinere heading binnen een heading via span : inline -->
+                    <h1>Main heading<span class="small"> small heading</span></h1>
+                    <h2>Main heading<span class="small"> small heading</span></h2>
+                    <h3>Main heading<span class="small"> small heading</span></h3>
+                    <h4>Main heading<span class="small"> small heading</span></h4>
+                    <h5>Main heading<span class="small"> small heading</span></h5>
+                    <h6>Main heading<span class="small"> small heading</span></h6>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
